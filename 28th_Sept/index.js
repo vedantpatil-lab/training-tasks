@@ -57,3 +57,29 @@
 //  .catch() 
 //  .then((res)=>{ console.log(res)})
 
+// console.log([2] === [2]) // js compares objects by reference
+
+//  test(); 
+//  function test() { 
+//   return true 
+// }
+
+// console.log(true == '1')  // true
+// console.log(true === '1') //false
+
+// console.log(null == 0);
+// when using comparison operators js coverts null into number but for == it does not convert it into a number.
+
+// console.log(NaN === NaN);
+// NaN represents an undefined value mathematically and no two undefined values are equal.
+
+
+// console.log(typeof null); // object
+
+console.log( "b" + "a" + +"a" + "a");
+
+
+
+
+
+
