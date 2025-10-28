@@ -144,3 +144,9 @@
 // let finalSum = (max * (max + 1)) / 2;
 // console.log(finalSum - sum)
 
+
+
+// ------- Even numbers from an array ---------
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// let evenNumbers = arr.filter((num)=> num % 2 == 0);
+// console.log(evenNumbers)
