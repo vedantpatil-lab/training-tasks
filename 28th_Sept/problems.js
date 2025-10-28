@@ -62,6 +62,33 @@
 // console.log("Second Max Number", sec_max);
 
 
+// --- reveres an integer without converting into string ---
+// let num = 400;
+// let rev = 0;
+// let count = 0;
+
+// while(num > 0){
+//     let digit = num % 10;
+//     if(rev == 0 && digit == 0){
+//         count++;
+//     }
+//     rev = rev * 10 + digit;
+//     num = Math.floor(num / 10)
+// };
+
+// if(count){
+//     console.log("0".repeat(count) + rev)
+// }else{
+//     console.log(rev)
+// }
 
 
+// ------ Swap two values without using third variable -----
 
+let a = 10;
+let b = 20;
+
+a =  a + b;
+b = a - b;
+a = a - b;
+console.log("a:" + a + " " + "b:" + b)
