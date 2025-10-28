@@ -85,10 +85,62 @@
 
 // ------ Swap two values without using third variable -----
 
-let a = 10;
-let b = 20;
+// let a = 10;
+// let b = 20;
 
-a =  a + b;
-b = a - b;
-a = a - b;
-console.log("a:" + a + " " + "b:" + b)
+// a =  a + b;
+// b = a - b;
+// a = a - b;
+// console.log("a:" + a + " " + "b:" + b)
+
+
+// // ----- Reverse a string -----
+// let str = "nimap";
+// let rev = "";
+
+// for(let i = str.length - 1; i>=0; i--){
+//     rev = rev + str[i]
+// };
+
+// console.log(rev)
+
+
+// // ---- Anagram Program ------
+// let str1 = "listen";
+// let str2 = "silent";
+// let isAnagram = true;
+// let map = new Map();
+
+// for(let i=0; i<str1.length; i++){
+//     map.set(str1[i], (map.get(str1[i]) || 0) + 1)
+// };
+
+// for(let i=0; i<str2.length; i++){
+//     if(!map.has(str2[i])){
+//         isAnagram = false;
+//         break;
+//     }
+//     map.set(str2[i], (map.get(str2[i])) - 1)
+// };
+
+// for(let value of map.values()){
+//     if(value != 0){
+//         isAnagram = false;
+//         break;
+//     }
+// };
+
+// if(isAnagram){
+//     console.log("Anagram")
+// }else{
+//     console.log("Not Anagram")
+// }
+
+
+// ------- Find missing element from an array  ---------
+// let arr = [1,2,3,4,6,7,8,9]
+// let sum = arr.reduce((acc, curr)=> acc + curr, 0)
+// let max = Math.max(...arr)
+// let finalSum = (max * (max + 1)) / 2;
+// console.log(finalSum - sum)
+
