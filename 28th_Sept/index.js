@@ -44,4 +44,16 @@
 //   console.log(y); })();
 
  
- console.log(true + 1);
+//  console.log(true + 1);
+//  console.log(5 + false)
+
+
+//  Promise.resolve(3) 
+//  .then((res)=>{ console.log(res) })
+//  .catch() 
+//  .then() 
+//  .then(res=>res) 
+//  .then() 
+//  .catch() 
+//  .then((res)=>{ console.log(res)})
+
