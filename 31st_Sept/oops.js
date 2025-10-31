@@ -198,3 +198,86 @@
 // console.log(user.name); // ARYAN
 
 
+// Project using OOPs Concept
+// User Manager System
+
+// Tasks :
+// 1) Create a User class
+// 2) Add Encapsulation
+// 3) Add a Static Counter
+// 4) Create an Admin class that extends User
+// 5) Implement polymorphism
+
+class User{
+    #email = null;
+    static userCount = 0;
+
+    static getUserCount(){
+        console.log(this.userCount);
+    }
+    constructor(name, email){
+        this.name = name
+        this.#email = email
+        User.userCount++;
+    }
+    static getUserCount() {
+         console.log(`Total users: ${this.userCount}`);
+    }
+
+    login(){
+        console.log(`User ${this.name} logged in.`)
+    }
+
+    logout(){
+        console.log(`User ${this.name} logged out.`)
+    }
+
+    get email(){
+        return this.#email;
+    }
+
+    roleInfo(){
+        console.log(`Regular user : ${this.name}`)
+    }
+}
+
+class Admin extends User {
+  constructor(name, email) {
+    super(name, email);
+  }
+
+  deleteUser(user) {
+    console.log(`Admin ${this.name} deleted user ${user.name}.`);
+  }
+
+  roleInfo(){
+        console.log(`Admin user : ${this.name}`)
+    }
+}
+
+const user2 = new User("Aryan", "aryan@mail.com");
+const admin = new Admin("AdminBoss", "boss@mail.com");
+user2.roleInfo();
+admin.roleInfo();
+
+
+
+// const user1 = new User("Vedant", "vedant@mail.com");
+// const user2 = new User("Aryan", "aryan@mail.com");
+// const admin = new Admin("AdminBoss", "boss@mail.com");
+
+// admin.deleteUser(user1);
+
+// const u1 = new User("A", "a@mail.com");
+// console.log(u1)
+// const u2 = new User("B", "b@mail.com");
+// const u3 = new User("B", "b@mail.com");
+// User.getUserCount(); // Total users: 2
+
+
+// const user1 = new User("Vedant", "vedant@example.com");
+// user1.login();   
+// user1.logout();
+// console.log(user1.email)
+
+
