@@ -65,7 +65,7 @@ const fs = require("node:fs")
 // writeStream.on("finish", ()=> console.log("Writing Completed !"))
 
 // ===== Copying a file =======
-fs.copyFile("./output.txt", "./copiedOutput.txt", (err)=>{
-    if(err) throw err
-    console.log("File copied successfully !!")
-})
+// fs.copyFile("./output.txt", "./copiedOutput.txt", (err)=>{
+//     if(err) throw err
+//     console.log("File copied successfully !!")
+// })
