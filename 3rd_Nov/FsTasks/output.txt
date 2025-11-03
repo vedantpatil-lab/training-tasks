@@ -1,0 +1,2 @@
+This is written using Write Stream.
+Streams handle large data efficiently.
